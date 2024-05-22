@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matrix Grid</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="p-2">
+    <div class="flex items-center justify-center h-[calc(100vh-2rem)]">
+      <form class="m-2 p-10 border rounded-2">
+        <div class="grid grid-cols-[100px_1fr]">
+          <label for="image">Image</label>
+          <input type="file" accept="image/*" name="image" id="image" required />
+        </div>
+
+        <div class="grid grid-cols-[100px_1fr] mt-2">
+          <label for="row">Row</label>
+          <input class="border rounded" type="number" name="row" id="row" required min="1" />
+        </div>
+
+        <div class="grid grid-cols-[100px_1fr] mt-2">
+          <label for="col">Col</label>
+          <input class="border rounded" type="number" name="col" id="col" required min="1" />
+        </div>
+
+        <div class="flex items-center justify-center">
+          <button class="mt-4 py-1 px-4 border rounded text-white bg-teal-500" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>
